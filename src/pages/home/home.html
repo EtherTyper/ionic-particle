@@ -3,11 +3,11 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-title>Eli's App</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding> 
+<ion-content padding>
   <div *ngIf="!particle.token">
       Please login and select a device. <br />
       <button ion-button (click)="login()">Login</button>
@@ -34,7 +34,7 @@
       <div>
           <h5>Custom components</h5>
           <p>
-            You can also create custom components. It's also more efficient to update components by subscribing to events 
+            You can also create custom components. It's also more efficient to update components by subscribing to events
             from your device, by calling <code>particle.subscribe</code>
           </p>
           <particle-progress [event]="'variableUpdate'" [min]="2" [max]="10"></particle-progress>

@@ -8,6 +8,7 @@ import { LoginPage } from '../pages/login/login';
 
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
+import { AboutPage } from '../pages/about/about';
 
 @Component({
   templateUrl: 'app.html'
@@ -19,14 +20,15 @@ export class MyApp {
 
   pages: Array<{title: string, component: any}>;
 
-  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen, 
+  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen,
     public menu: MenuController, public particle: ParticleProvider) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage }
+      { title: 'List', component: ListPage },
+      { title: 'About', component: AboutPage }
     ];
 
   }
@@ -47,7 +49,7 @@ export class MyApp {
   }
 
   loginPage() {
-    this.menu.close();  
+    this.menu.close();
     this.nav.push(LoginPage);
   }
 

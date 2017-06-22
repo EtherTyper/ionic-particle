@@ -6,6 +6,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { LoginPage } from '../pages/login/login';
+import { AboutPage } from '../pages/about/about';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -22,6 +23,7 @@ import { IonicStorageModule } from '@ionic/storage';
     HomePage,
     ListPage,
     LoginPage,
+    AboutPage,
     DeviceListComponent,
     ParticleProgressComponent
   ],
@@ -35,7 +37,8 @@ import { IonicStorageModule } from '@ionic/storage';
     MyApp,
     HomePage,
     ListPage,
-    LoginPage
+    LoginPage,
+    AboutPage
   ],
   providers: [
     StatusBar,
