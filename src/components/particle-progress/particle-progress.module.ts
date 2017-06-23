@@ -13,4 +13,4 @@ import { ParticleProgressComponent } from './particle-progress';
     ParticleProgressComponent
   ]
 })
-export class ParticleProgressComponentModule {}
+export class ParticleProgressComponentModule { }

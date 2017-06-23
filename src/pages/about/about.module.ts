@@ -13,4 +13,4 @@ import { AboutPage } from './about';
     AboutPage
   ]
 })
-export class AboutPageModule {}
+export class AboutPageModule { }

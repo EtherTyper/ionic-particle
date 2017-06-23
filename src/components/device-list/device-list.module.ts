@@ -13,4 +13,4 @@ import { DeviceListComponent } from './device-list';
     DeviceListComponent
   ]
 })
-export class DeviceListComponentModule {}
+export class DeviceListComponentModule { }
