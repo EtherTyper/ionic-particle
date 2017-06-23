@@ -28,8 +28,9 @@
       </p>
 
       <span *ngIf="particle.device && particle.device.connected">His particle is {{particle.device.name}}
-        and he is in the gyroscopic position of ({{gyroX}}, {{gyroY}}, {{gyroZ}}), {{distance}} Ligand
-        degrees away from his initial position.</span>
+        and his orientation can be represented as the vector {{currentGyro}}, which is
+        {{currentGyro?.degreesFrom(initialGyro).toFixed(2)}} degrees away from his initial position vector
+        of {{initialGyro}}.</span>
     </ion-card-content>
 
     <button ion-item>
