@@ -28,7 +28,7 @@
       </p>
 
       <span *ngIf="particle.device && particle.device.connected">His particle is {{particle.device.name}}
-        and his orientation can be represented as the vector {{currentGyro}}, which is
+        and his orientation can be represented as the vector {{currentGyro}}, which means he's wobbled
         {{currentGyro?.degreesFrom(initialGyro).toFixed(2)}} degrees away from his initial position vector
         of {{initialGyro}}.</span>
     </ion-card-content>
@@ -42,7 +42,7 @@
     <button ion-item>
       <ion-icon name='logo-github' item-start style="color: #000"></ion-icon>
       GitHub Repos
-      <ion-badge item-end>182</ion-badge>
+      <ion-badge item-end>183</ion-badge>
     </button>
 
   </ion-card>
